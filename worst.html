@@ -10,13 +10,13 @@
     <script src="jquery.js"></script>
     </head>
     <body style="background-color:#34282c;text-align:center;color:white;font-family:sans-serif">
-      <h1 style="font-size:300%;padding-bottom:0%;margin:0%">First Fit</h1><br>
+      <h1 style="font-size:300%;padding-bottom:0%;margin:0%">Worst Fit</h1><br>
       <p style="font-size:200%;padding-top:0%;margin:0%">(Dynamic Memory Allocation)</p>
 <div style="text-align:left;padding-left:15%">
       <p style="font-size:150%"><u>Definition:</u></p>
-      <p>1. Allocate the first hole that is big enough.</p>
-      <p>2. Searching can start either at the beginning of the set of holes or where the previous first-fit search ended.</p>
-      <p>3. We can stop searching as soon as we find a free hole that is large enough.</p>
+      <p>1. Allocate the largest hole.</p>
+      <p>2. We must search the entire list, unless it is sorted by size.</p>
+      <p>3. This strategy produces the largest leftover hole, which may be more useful than the smaller leftover hole from a best-fit approach.</p>
     </div>
     </body>
     </html>

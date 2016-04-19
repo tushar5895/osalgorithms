@@ -11,9 +11,9 @@
     <script>
 $(document).ready(function()
 {
-  $('.sch').hide();
+  /*$('.sch').hide();
   $('.dynamic').hide();
-  $('.page').hide();
+  $('.page').hide();*/
 $('.form-control').change(function()
 {
   if ($(this).val() == 1)
@@ -55,18 +55,18 @@ $('.form-control').change(function()
                 <option value="3">Page Replacement</option>
               </select></center><br><br>
 
-              <div class="sch" >
+              <div class="sch" style="display:none" >
       <a href="fcfs.html" class="secondary button">First Come First Served</a><br>
        <a href="sjf.html" class="secondary button">Shortest Job First</a><br>
        <a href="priority.html" class="secondary button">Priority</a><br>
        <a href="roundrobin.html" class="secondary button">Round Robin</a>
      </div>
-     <div class="dynamic" >
+     <div class="dynamic" style="display:none" >
        <a href="first.html" class="secondary button">First Fit</a><br/>
         <a href="best.html" class="secondary button">Best Fit</a><br/>
         <a href="worst.html" class="secondary button">Worst Fit</a>
      </div>
-     <div class="page" >
+     <div class="page" style="display:none" >
        <a href="fifo.html" class="secondary button">First In First Out</a><br/>
         <a href="lru.html" class="secondary button">Least Recently Used</a><br/>
         <a href="opt.html" class="secondary button">Optimal</a>
