@@ -1,2 +1,0 @@
-# osalgorithms
-Operating System Algorithms
