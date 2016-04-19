@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System Algorithms</title>
+    <link rel="stylesheet" href="css/foundation.css">
+  <!--  <link rel="stylesheet" href="css/app.css">-->
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function()
+{
+  $('.sch').hide();
+  $('.dynamic').hide();
+  $('.page').hide();
+$('.form-control').change(function()
+{
+  if ($(this).val() == 1)
+   {
+    $('.sch').show();
+    $('.dynamic').hide();
+    $('.page').hide();
+  }
+   else if ($(this).val() == 2)
+   {
+    $('.sch').hide();
+    $('.page').hide();
+    $('.dynamic').show();
+  }
+  else if ($(this).val() == 3)
+   {
+    $('.dynamic').hide();
+    $('.sch').hide();
+    $('.page').show();
+  }
+
+  else {
+    $('.sch').hide();
+    $('.dynamic').hide();
+    $('.page').hide();
+    alert("Choose one algorithm to proceed !!")
+  }
+});
+});
+</script>
+  </head>
+  <body style="font-family:sans-serif; background-color:#34282c;color:white;text-align:center">
+    <h1 style="font-size:350%">Operating System Algorithms</h1><br>
+    <h2> Select the algorithm :</h2>
+              <center><select class="form-control" style="width:55%; font-size:120%">
+                <option disabled="disabled" selected="selected">Select Algorithm</option>
+                <option value="1">Scheduling Algorithms</option>
+                <option value="2">Dynamic Memory Allocation</option>
+                <option value="3">Page Replacement</option>
+              </select></center><br><br>
+
+              <div class="sch" >
+      <a href="fcfs.html" class="secondary button">First Come First Served</a><br>
+       <a href="sjf.html" class="secondary button">Shortest Job First</a><br>
+       <a href="priority.html" class="secondary button">Priority</a><br>
+       <a href="roundrobin.html" class="secondary button">Round Robin</a>
+     </div>
+     <div class="dynamic" >
+       <a href="first.html" class="secondary button">First Fit</a><br/>
+        <a href="best.html" class="secondary button">Best Fit</a><br/>
+        <a href="worst.html" class="secondary button">Worst Fit</a>
+     </div>
+     <div class="page" >
+       <a href="fifo.html" class="secondary button">First In First Out</a><br/>
+        <a href="lru.html" class="secondary button">Least Recently Used</a><br/>
+        <a href="opt.html" class="secondary button">Optimal</a>
+     </div>
+  </body>
+  </html>
